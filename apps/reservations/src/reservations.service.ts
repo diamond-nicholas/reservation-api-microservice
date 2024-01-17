@@ -21,8 +21,8 @@ export class ReservationsService {
     return this.reservationsRepository.find({});
   }
 
-  findOne(id: number) {
-    return `This action returns a #${id} reservation`;
+  findOne(_id: string) {
+    return this.reservationsRepository.findOne({ _id });
   }
 
   update(id: number, updateReservationDto: UpdateReservationDto) {
