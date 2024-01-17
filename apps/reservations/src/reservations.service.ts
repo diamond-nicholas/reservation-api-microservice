@@ -18,7 +18,7 @@ export class ReservationsService {
   }
 
   findAll() {
-    return `This action returns all reservations`;
+    return this.reservationsRepository.find({});
   }
 
   findOne(id: number) {
