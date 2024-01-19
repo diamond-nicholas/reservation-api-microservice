@@ -20,3 +20,4 @@ import {
   providers: [ReservationsService, ReservationsRepository],
 })
 export class ReservationsModule {}
+// exports: [UsersService],
