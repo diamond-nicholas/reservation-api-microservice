@@ -12,7 +12,7 @@ RUN npm install
  
 COPY . . 
  
-RUN npm run build
+RUN npm run build 
  
 FROM node:alpine As production
  
